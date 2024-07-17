@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .line{
+            width: 15px;
+            height: 15px;
+            background-color: blue;
+            margin-left: 15px;
+            animation: audio 1000ms infinite;
+        }
+        @keyframes audio{
+            25%{
+                transform: scaleY(6);
+                border-radius: 25%;
+            }
+            50%{
+                transform: scaleY(5);
+                border-radius: 50%;
+            }
+        }
+        .music{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="music">
+             <div class="line"></div>
+             <div class="line" style="animation-delay: 100ms; background-color: blueviolet;" ></div>
+             <div class="line" style="animation-delay: 200ms; background-color: chocolate"></div>
+             <div class="line" style="animation-delay: 300ms; background-color: crimson"></div>
+             <div class="line" style="animation-delay: 400ms; background-color: darkkhaki"></div>
+    </div>
+</body>
+</html>
